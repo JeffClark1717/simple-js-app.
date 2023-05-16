@@ -57,7 +57,6 @@ button:hover {
 .modal {
   display: none;
   position: fixed;
-  border-radius: 10px;
   left: 0;
   top: 0;
   width: 100%;
@@ -67,21 +66,19 @@ button:hover {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
+  margin: auto;
+  padding: 70px;
   border: 1px solid #888;
-  width: 80%;
+  width: 30%;
   max-width: 600px;
-  position: relative;
-  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
   text-transform: capitalize;
+  box-sizing: border-box;
 }
-
-.modal-content img {
-  width: 300px;
-  height: 300px;
-}
-
 
 .close {
   position: absolute;
@@ -89,7 +86,7 @@ button:hover {
   right: 0;
   font-size: 28px;
   font-weight: bold;
-  padding: 5px;
+  padding: 10px;
   color: #aaa;
   cursor: pointer;
 }
