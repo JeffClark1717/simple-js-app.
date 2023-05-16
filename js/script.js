@@ -117,33 +117,32 @@ let pokemonRepository = (function () {
                 "/>"
             );
 
-      } else {
-          type1 = pokemon.types[0].type['name'];
-          $(".modal-body").html(
-              "<p>" + "Height: " +
-                pokemon.height / 10 +
-                "m" +
-                "</p>" +
-                "<p>" + "Type: " +
-                type1 +
-                "</p>" +
-                "<p>" + "Weight: " +
-                pokemon.weight + "lbs." +
-                "</p>" +
-                "<img src=" +
-                '"' +
-                pokemon.sprite +
-                '"' +
-                "/>" +
-                "<img src=" +
-                '"' + 
-                pokemon.sprite2 +
-                '"' +
-                "/>"
-            );
+        } else {
+            type1 = pokemon.types[0].type['name'];
+            $(".modal-body").html(
+                "<p>" + "Height: " +
+                  pokemon.height / 10 +
+                  "m" +
+                  "</p>" +
+                  "<p>" + "Type: " +
+                  type1 +
+                  "</p>" +
+                  "<p>" + "Weight: " +
+                  pokemon.weight + "lbs." +
+                  "</p>" +
+                  "<img src=" +
+                  '"' +
+                  pokemon.sprite +
+                  '"' +
+                  "/>" +
+                  "<img src=" +
+                  '"' + 
+                  pokemon.sprite2 +
+                  '"' +
+                  "/>"
+              );
       }
   }
-
 
   return {
       getAll: getAll,
